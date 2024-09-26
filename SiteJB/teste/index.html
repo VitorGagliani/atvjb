@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04724</title>
+  <link rel="stylesheet" href="src/style.css">
+
+</head>
+
+<body>
+
+
+  <header>
+    <ul class="menu">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#equipe">Equipe</a></li>
+    </ul>
+  </header>
+
+  <div class="home">
+        <h1>
+          Descubra nossos talentos
+        </h1>
+  </div>
+
+  <div class="sobre" id="sobre">
+    <div class="sobre-txt"></div>
+      <h3>Somos uma empresa focada em desenvolvimentos de sites para empresas, contando com cinco membors na nossa equipe focados para entregar os melhores resultados para nossos clientes.</h3>
+    </div>
+  </div>
+
+
+  <div class="equipe" id="equipe">
+    <h2>Conheça Nossa Equipe</h2>
+
+    <div class="member-list">
+      <div class="members">
+        <img src="src/img/membros/Rectangle 4.png" alt="">
+        <h5>Vitor Gagliani</h5>
+        <p>Desenvolvedor Full-stack</p>
+      </div>
+      <div class="members">
+        <img src="src/img/membros/Imagem do WhatsApp de 2024-09-25 à(s) 17.27.24_c641dd0c.jpg" alt="">
+        <h5>Vinicius Garbelini</h5>
+        <p>Desenvolvedor Front-end </p>
+        
+      </div>
+
+      <div class="members">
+        <img src="src/img/membros/rufato.png" alt="">
+        <h5>Jose Rufato</h5>
+        <p>Banco de Dados</p>
+
+    </div>
+
+    <div class="members">
+      <img src="src/img/membros/bruno.png" alt="">
+      <h5>Bruno Reinaldo</h5>
+      <p>Banco de Dados</p>
+
+    </div>
+
+    <div class="members">
+      <img src="src/img/membros/Imagem do WhatsApp de 2024-09-25 à(s) 18.04.57_9b7d08d2.png" alt="">
+      <h5>Filippi leite</h5>
+      <p>Desenvolvedor Back-end</p>
+
+  </div>
+
+  <script> const MenuLinks = document.querySelectorAll(".menu a");
+
+    MenuLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+            event.preventDefault(); // Impede o comportamento padrão do link
+    
+            const targetID = this.getAttribute("href").substring(1); // Obtém o ID da seção
+            const targetSection = document.getElementById(targetID); // Seleciona a seção alvo
+    
+            targetSection.scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    });
+  
+  
+  
+  </script>
+
+</body>
+
+</html>
