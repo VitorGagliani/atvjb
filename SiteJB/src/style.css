@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  background-color: black;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Garante que o header ocupe a largura total */
+  z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+body {
+  padding-top: 60px; /* Compensa a altura do header */
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+ul,
+li,
+a {
+  display: flex;
+  justify-content: space-around;
+  max-width: 400px;
+  left: 250px;
+  /* color: #913BF3; */
+  color: white;
+  position: relative;
+  top: 6px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+a:hover {
+  color: #aa88ff;
+}
+
+.home {
+  display: grid;
+  /* background-color: #1B1D20; */
+  background-image: url(img/svg-home/liquid-cheese.svg);
+  background-size: cover;
+  min-height: 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 {
+  color: #aa88ff;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 7.5px;
+}
+
+.sobre {
+  display: grid;
+  left: 600px;
+  position: relative;
+  justify-content: center;
+  min-height: 600px;
+  max-width: 700px;
+}
+
+.sobre-txt {
+  text-align: left;
+}
+
+.sobre h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.equipe {
+  background: #464c54;
+  color: white;
+  min-height: 600px;
+  display: grid;
+  position: relative;
+}
+
+.equipe h2 {
+  display: grid;
+  justify-content: center;
+  position: relative;
+  top: 40px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  font-size: 28px;
+}
+
+.member-list{
+  display: flex;
+  margin: 20px 50px;
+  position: relative;
+    left: 50px;
+}
+
+.members,
+.members img {
+  width: 55%;
+  position: relative;
+  text-align: center;
+}
+}
